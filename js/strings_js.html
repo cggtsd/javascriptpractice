@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Strings</title>
+</head>
+<body>
+    <h1>Strings in JS</h1>
+    <script>
+        //first way of creating strings
+        // let name="Fathima"
+        // console.log(name,typeof name)
+        // let name='Fathima'
+        // console.log(name,typeof name)
+
+        //template literals
+        let multiline=`My 
+                         name is 
+                          fathima`
+        console.log(multiline)
+
+        //string interpolation
+        let price=68958
+        let discount= 1200
+        let prodcutPrice=`Product price is ${price}
+        Discount price is ${discount}`
+
+        console.log(prodcutPrice)
+
+        let a=1,b=2,c
+        c=a+b
+        console.log("sum of "+a+" and "+b+" is "+c)
+        console.log(`sum of ${a+1} and ${b+2} is ${c}`)
+
+        let baseUrl=`http://localhost:8080`
+        console.log(`${baseUrl}/api/v1/quizz`)
+
+        //second way of creating strings
+        let secondName= new String("D.Fathima")
+        console.log(secondName)
+    </script>
+</body>
+</html>

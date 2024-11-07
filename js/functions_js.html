@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in JS</title>
+</head>
+<body>
+    <h1>Functions in JS</h1>
+    <script>
+        //function declaration
+        
+// function hello(){
+//             console.log("hello")
+//         }
+//         setTimeout(hello,5000)
+        //function expression
+        // const hello=function(){
+        //     console.log("Hello")
+        // }
+        // hello()
+        //arrow functions - no parameetrs
+        //  const hello = ()=>console.log(`Hello`)
+        //  hello()
+        //arrow functions with one parameter
+        //  const hello = name=>console.log(`Hello ${name}`)
+        //  hello(`CGG`)
+       
+         //arrow functions with multiple lines of code
+        // const hello= name=>{
+        //     console.log(`Hello ${name}`)
+        //     console.log(`You are old`)
+        //   }
+        //  hello(`CGG`)
+
+         //arrow function with more tha one parameter
+        //  const hello= (name,age)=>{
+        //     console.log(`Hello ${name}`)
+        //     console.log(`You are ${age} years old`)
+        //   }
+        //  hello(`CGG`,12)
+
+         //arrow function without return
+        //  const sum = (a,b)=>a+b
+        //  console.log(`sum of two numbers is ${sum(4,5)}`)
+
+        let myUserName=name=>console.log(`Hello ${name}`)
+        setTimeout(()=>myUserName(`CGG`),5000)
+        
+        
+        // let name='CGG'
+        // setTimeout(()=>console.log(`Hello ${name}`),5000)
+      
+        //this keyword
+
+        //for regular functions(function decalration,function expression) this refers to the caller
+        //for arrow functions this refers to the owner i.e where the function was defined
+    </script>
+</body>
+</html>

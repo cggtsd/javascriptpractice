@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Operator</title>
+</head>
+<body>
+    <h1>Spread & Rest Operators in JS</h1>
+    <script>
+    /*
+     spread operator-(...) allows an iterable such as an array or string 
+      to be expanded into seperate elements (unpacks the elements)
+    */
+
+    // const numbers=[1,2,3,4,5]
+    // console.log(...numbers)
+    // const maximum = Math.max(...numbers)
+    // const minimum = Math.min(...numbers)
+    // console.log(maximum)
+    // console.log(minimum)
+
+    // let username="Fathima"
+    // console.log(username)
+    // let letters=[...username]//unpacking
+    // console.log(letters)
+    // console.log(letters.join("")) //packing
+
+    //make a copy
+    // const fruits=["apple","orange","lemon","kiwi"]
+    // const newFruits=[...fruits]
+    // console.log(newFruits)
+
+    //combine two or more arrays
+    // const fruits=["apple","orange","lemon","kiwi"]
+    // const vegetables=["tomato","potato","brinjal","beans"]
+    // const price=[20.5,40,33,50.6]
+    // const foods=[...fruits,...vegetables]
+    // const foodPrices=[...fruits,...price]
+    // console.log(foodPrices)
+
+  //append sepearte elements along with expamding
+// const fruits=["apple","orange","lemon","kiwi"]
+// const newFruits=[...fruits,"banana","guava"]
+// console.log(newFruits)
+
+/*
+Rest Operator-(...) allow a function to work with a variable number of 
+arguments by bundling them into an array
+*/
+// function openFridge(...items){
+//  console.log(items)
+//  console.log(...items)
+// }
+
+// function getFoodItems(...items){
+//     return items
+// }
+// const food1="Biryani"
+// const food2="Rice"
+// const food3="Idly"
+// const food4="Roti"
+// const food5="Dosa"
+
+// openFridge(food1,food2,food3,food4,food5)
+// const f= getFoodItems(food1,food2,food3,food4)
+// console.log(f)
+
+// function combineStrings(...names){
+//     return names.join(" ")
+// }
+
+// const fullName= combineStrings("Ms","D.","Fathima")
+// console.log(fullName)
+function sum(...items){
+    let s=0
+    for (const element of items) {
+        s+=element
+    }
+    return s
+}
+function average(...items){
+    let s=0
+    for (const element of items) {
+        s+=element
+    }
+    return s/items.length
+}
+const total=sum(1,2,10,12)
+console.log(`Total is ${total}`)
+const avg=average(1,2,10,12)
+console.log(`Average is ${avg}`)
+</script>
+</body>
+</html>
