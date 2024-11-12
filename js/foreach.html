@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForEach Method</title>
+</head>
+<body>
+    <h1>Array ForEach Method</h1>
+    <script>
+        // const numbers=[1,2,3,4,5]
+
+        // numbers.forEach(double)
+        // numbers.forEach(triple)
+        // numbers.forEach(square)
+        // numbers.forEach(displayElement)
+
+        function displayElement(element){
+            console.log(element)
+        }
+
+        // function double(element,index,array){
+        //     array[index]=element*2
+        // }
+        // function triple(element,index,array){
+        //     array[index]=element*3
+        // }
+        // function square(element,index,array){
+        //     array[index]=Math.pow(element,2)
+        // }
+        const fruits=["apple","orange","banana","kiwi"]
+
+        fruits.forEach(capitalize)
+        fruits.forEach(displayElement)
+        
+        function capitalize(element,index,array){
+            array[index]=element.charAt(0).toUpperCase()+element.slice(1)
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Method</title>
+</head>
+<body>
+    <h1>Array Filter Method </h1>
+    <script>
+    //   const numbers=[1,2,3,4,5,6,7]
+
+    //  const evenNums= numbers.filter(isEven)
+    //  const oddNums= numbers.filter(isOdd)
+
+    //  console.log(evenNums)
+    //  console.log(oddNums)
+
+    //   function isEven(element){
+    //     return element%2===0
+    //   }
+    //   function isOdd(element){
+    //     return element%2!==0
+    //   }
+
+    const words=["apple","orange","banana","kiwi","pomegranate","coconut"]
+    const shortWords= words.filter(getShortWords)
+    const longWords= words.filter(getLongWords)
+    console.log(shortWords)
+    console.log(longWords)
+
+    function getShortWords(element){
+        return element.length <= 6
+    }
+    function getLongWords(element){
+        return element.length > 6
+    }
+
+    </script>
+</body>
+</html>

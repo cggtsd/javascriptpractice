@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects in JS</title>
+</head>
+<body>
+    <h1>Javascript Objects</h1>
+    <script>
+        // const person1={
+        //     firstName:"D.",
+        //     lastName:"Fathima",
+        //     job:"trainer",
+        //     favFood:"Biryani",
+        //     sayHello:function(){
+        //         console.log(`Iam ${this.firstName} ${this.lastName}`)
+        //     },
+        //     eat:function(){
+        //         console.log(`Iam ${this.firstName} ${this.lastName} eating ${this.favFood}`)
+        //     }
+        // }
+        // const person2={
+        //     firstName:"Ravi",
+        //     lastName:"Velpula",
+        //     job:"Developer",
+        //     'fav Food':"Biryani",
+        //     sayHello:()=>{
+        //         console.log(`Iam ${person2.firstName} ${person2.lastName}`)
+        //     },
+        //     eat:()=>{
+        //         console.log(`Iam ${person2.firstName} ${person2.lastName} eating ${person2['fav Food']}`)
+        //     }
+        // }
+
+        // console.log(person1["firstName"])
+        // console.log(person1["lastName"])
+        // console.log(person1["job"])
+        // console.log(person1["favFood"])
+        // person1["sayHello"]()
+        // person1["eat"]()
+
+        // console.log(person2.firstName)
+        // console.log(person2.lastName)
+        // console.log(person2.job)
+        // console.log(person2['fav Food'])
+        // person2.sayHello()
+        // person2.eat()
+
+
+        // for (const key in person1) {
+        //    console.log(person1[key])
+        // }
+
+        // console.log(this)
+
+        //spread operator
+        const product1={
+            productId:12,
+            title:"LG TV",
+            price:34000,
+            discount:1300
+        }
+        const product2={
+            productId:12,
+            title:"LG TV",
+            discount:1300
+        }
+        // const customer={
+        //     custId:14,
+        //     name:"D.Fathima",
+        //     address:"Hyd"
+        // }
+
+        // const newProduct = {...product,"isActive":false,category:"electronics"};
+        // const sale = {...product,...customer};
+
+        // console.log(newProduct)
+        // console.log(sale)
+
+
+        //destructuring
+        //example 1 swap two variables
+        // let a=1
+        // let b=2
+        // let x,y;
+        // [x,y]=[b,a] 
+        // console.log(x)
+        // console.log(y)
+
+        //example 2 swap two array elements
+        // const colors=["red","green","blue","black","white"]
+
+        // let c0,c4;
+        // [c0,c4]=[colors[4],colors[0]]
+        // console.log(c0)
+        // console.log(c4)
+
+      //assign array elements to variables
+      //let firstColor,secondColor,thirdColor
+    //   const [firstColor,secondColor,thirdColor,...extraColors]=colors
+    //   console.log(firstColor)
+    //   console.log(secondColor)
+    //   console.log(thirdColor)
+    //   console.log(extraColors)
+
+      //object destructing
+    //   const {productId,title,price,discount}=product1
+    //   console.log(productId)
+    //   console.log(title)
+    //   console.log(price)
+    //   console.log(discount)
+    //   const {productId,title,price=0.0,discount}=product2
+    //   console.log(productId)
+    //   console.log(title)
+    //   console.log(price)
+    //   console.log(discount)
+
+    //object destructuring in function
+      function display({productId,title,price=0.0,discount})
+      {
+      console.log(productId)
+      console.log(title)
+      console.log(price)
+      console.log(discount)
+
+      }
+
+      display(product1)
+      display(product2)
+       </script>
+</body>
+</html>
