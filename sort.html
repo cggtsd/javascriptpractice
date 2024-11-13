@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort Method</title>
+</head>
+<body>
+    <h1>Sorting in JS</h1>
+    <script>
+        // const fruits=["apples","oranges","banana","kiwi","grapes"]
+        // fruits.sort()
+
+        // console.log(fruits)
+
+        // const numbers=[1,12,10,4,5,20,3,6]
+        // numbers.sort((a,b)=>b-a)
+        // console.log(numbers)
+
+        //sorting objects by given property
+        const people=[{name:"Ravi",age:30,gpa:3.5},
+        {name:"Feroze",age:30,gpa:4.5},
+        {name:"Pradeep",age:25,gpa:2.5},
+        {name:"Anusha",age:22,gpa:6.5}]
+
+        people.sort((a,b)=>b.name.localeCompare(a.name))
+         console.log(people)
+    </script>
+</body>
+</html>

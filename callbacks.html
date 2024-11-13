@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback</title>
+</head>
+<body>
+    <h1>Asynchronous Callbacks in JS</h1>
+    <script>
+    //     hello(leave)
+        
+     
+    //     function hello(callback){
+
+    //         setTimeout(() => {
+    //              console.log("Hello !")
+    //              callback()
+    //         }, 3000);
+       
+    //  }
+
+      
+    //  function goodbye(){
+    //     console.log("Goodbye !")
+    //  }
+    //  function leave(){
+    //     console.log("leave !")
+    //  }
+    sum(displayResult,1,2)
+    function sum(callback,x,y){
+        let result = x+y
+        callback(result)
+    }
+
+    function displayResult(result){
+        console.log(`Sum is ${result}`)
+    }
+
+    </script>
+</body>
+</html>

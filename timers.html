@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Timers</title>
+</head>
+<body>
+    <h1>Javascript Timers</h1>
+    <button onclick='start()'>Start</button>
+    <button onclick='stop()'>Stop</button>
+    <script>
+       function myCode(name){
+        console.log(`Hey,... Iam ${name}`)
+        console.log("how are you?")
+       }
+
+       let timerId
+       function start(){
+       // myCode()
+    //    setTimeout(callback,delay in millisec)
+        //   const timerId=setTimeout(myCode,3000,'Typescript')
+        //   clearTimeout(timerId)
+        // setTimeout(myCode,0)
+       timerId= setInterval(myCode,2000,'Javascript')
+       }
+
+       function stop(){
+          clearInterval(timerId)
+       }
+    </script>
+</body>
+</html>
