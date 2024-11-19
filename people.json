@@ -1,0 +1,26 @@
+[
+    {
+    "name":"Rizwan",
+    "age":30,
+    "isEmployed":true,
+    "hobbies":["reading","playing","programming"]
+    },
+    {
+    "name":"Pradeep",
+    "age":32,
+    "isEmployed":true,
+    "hobbies":["reading","playing","programming"]
+    },
+    {
+    "name":"Abc",
+    "age":40,
+    "isEmployed":false,
+    "hobbies":["reading","playing","programming"]
+    },
+    {
+    "name":"Xyz",
+    "age":30,
+    "isEmployed":true,
+    "hobbies":["reading","playing","programming"]
+    }
+]
