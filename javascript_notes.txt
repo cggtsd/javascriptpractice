@@ -1,0 +1,168 @@
+1)standard message boxes in javascript
+alert-display message
+prompt- take input from user
+confirm- yes/no
+----------------------------------------
+console.log,info,warn,error,table,clear
+
+2)Strings and String methods
+1.String literals(double quotes,single quotes,template literals(``)
+2.String constructor new String()
+prefer literals over constrcutor
+--------------------------------------------------------
+3)Type conversion
+non-numeric string to number = NaN
+non-numeric string to string = string
+non-numeric string to boolean = true
+-------------------------------------------
+"0" to number = 0
+"0" to string = "0"
+"0" to boolean = true
+----------------------------------------------
+empty string to number = 0
+empty string to string = empty string
+empty string to boolean = false
+-----------------------------------------------
+undefined to number = NaN
+undefined to string = undefined
+undefined to boolean = false
+------------------------------------
+
+4)Function and arrow functions
+function declaration 
+function name(){
+//code
+
+}
+name()
+function expression- a way to define functions as values or variables
+
+arrow functions- a concise way to write function expressions
+good for simple functions that you use only once
+(parameter)=>some code
+
+5)Arrays and array methods
+   a)operators - spread,rest
+   b)methods-
+    forEach:- used to iterate over the elements of an array
+              and apply a specified function to each element
+              array.forEach(callback)
+              forEach passes (element,index,array) to the callback
+    map:- accepts a callback and applies that function to each element of           an array,then returns a new array
+   filter:- creates a new array by filtering out elements
+   reduce:- reduces the elements of an array to a single value
+   find:- refer w3schools
+
+6)objects: a collection of related properties and/or methods ,can represent real world objects(people,products,places)
+ object= {
+           key:value,
+           functions()
+          }
+
+
+  a)this keyword
+  b)spread operator w.r.t object
+  c)destructuring objects and arrays
+  d)closure:
+   A function defined inside of another function ,the inner function has access to the variables and    scope of the outer function
+   Allow the private variables and state maintenance,used frequently in JS frameworks like      REACT,VUE,ANGULAR
+ 
+  e)ES6 modules - an external file that contains reusable code that can be imported into other   javascript files. write reusable code for many different applications can contain variables,classes,
+  function ... and more.Introduced as part of ECMAScript 2015 update
+ 
+  f)nested objects: objects inside of other objects 
+    allows you to represent more complex data structures. child object is enclosed by a parent object
+    Person{
+       address{} contactInfo{}}
+
+  g) sort() is used to sort elements of an array in place
+     sorts elements as strings in lexicographic order,not alphabetically
+
+  h) callbacks: function that is passes as an argument to another function 
+                used to handle asynchronous operations
+                1.reading a file
+                2.network request
+                3.interacting with database
+            hey ,when you are done,call be back
+g)synchronous vs asynchronous
+ synchronous: executes line by line consequtively in a sequential manner
+ code that waits for another operation to complete
+ asynchronous- allows multiple operations to be performed concurrently without waiting
+               doesn't block the execution flow amd allows the program to continue
+               (I/O operations,network request,fetching data)
+                handlied with callbacks,promises,async/await
+ 
+h)callback hell: situation in javascript where callbacks are nested within other 
+                 callbacks to the degree where the code is difficult to read 
+                 old pattern to handle asynchronous functions.Use promises + async /await to avoid callback hell
+i)promises:  is an object that manages asynchronous operations
+             wrap a promise object around {asynchronous}
+             " I promise to return a value"
+             pending->resolved->reject
+             new Promise((resolve,reject)=>{asynchronous code})
+
+            do these chores(tasks) in order
+
+            1.walk the dog
+            2.clean the kitchen
+            3.take out the trash
+-----------using promise object-------------
+          then()->resolve
+          catch()->reject
+          finally()->runs irrespective of resole or reject             
+j)async/await:
+         async -> makes a function return a promise
+         await -> makes an async function wait for a promise
+ Allows you to write asynchronous code in a synchronized manner
+ Async doesn't have resolve or reject parameters
+ 
+h)fetch: fetch used for making http request to fetch resources
+          (JSON style data,images,files)
+         simplifies asynchronous data fetching in javascript and used for interacting with APIS 
+         to retrieve & send data asynchronously         
+         fetch(url,{options})
+
+note:- even if we can't locate the resource .promise is still going to resolve it's not going to reject
+
+i) JSON-Javascript object notation
+        data - interchange format
+        used for exchanging data between a server and a client application
+     JSON files: {key:value} ,[value1,value2,value3]
+
+   JSON.stringify()- converts a JS object/array to JSON string
+   JSON.parse()- converts JSON string to a JS object/array
+
+j)localstorage,sessionstorage,cookie
+          
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
